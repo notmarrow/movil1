@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">prototype</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_id_del_producto">ID del Producto:</string>
+  <string name="lbl_coca_de_fresa">Coca de Fresa</string>
+  <string name="lbl_coca_de_fresa2">COCA DE FRESA</string>
+  <string name="lbl_50_80">50/80</string>
+  <string name="msg_producto_en_sto">Producto en Stock:</string>
+  <string name="lbl_80">/80</string>
+  <string name="msg_nombre_del_prod">Nombre del Producto:</string>
+  <string name="msg_ingresa_el_nomb">Ingresa el nombre</string>
+  <string name="lbl_50">50</string>
+  <string name="lbl_search">Search</string>
+  <string name="msg_bebida_carbonat">Bebida Carbonatada sabor Fresa
+Contenido 455 ml
+Distribuido por Refrescos Colombianos</string>
+  <string name="lbl_descripci_n">Descripción:</string>
+  <string name="lbl_m_s_info">Más Info</string>
+  <string name="lbl_0239">0239</string>
+  <string name="lbl_menor_a_mayor">Menor a Mayor</string>
+  <string name="lbl_nuevo_producto">Nuevo Producto</string>
+  <string name="lbl_15_80">15/80</string>
+  <string name="msg_ingresa_una_des">Ingresa una descripcion</string>
+  <string name="lbl_mi_historial">Mi Historial</string>
+  <string name="lbl_stock">Stock</string>
+  <string name="lbl">/</string>
+  <string name="lbl_stock_de">Stock de</string>
+  <string name="lbl_coca_de_pi_a">COCA DE PIÑA</string>
+  <string name="lbl_total">Total</string>
+</resources>

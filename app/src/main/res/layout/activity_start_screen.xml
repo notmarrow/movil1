@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecyan_800">
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_border_gray_900"
+            android:id="@+id/viewGenericimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_132pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_105pxh"
+            android:layout_marginStart="@dimen/_106pxh"
+            android:layout_marginTop="@dimen/_334pxv" android:layout_width="@dimen/_149pxh"/>
+    </LinearLayout>
+</layout>
