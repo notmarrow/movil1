@@ -72,46 +72,7 @@
                 android:layout_marginTop="@dimen/_4pxv"
                 android:layout_width="match_parent"
                 android:orientation="vertical" style="@style/groupStylewhite_1">
-                <LinearLayout android:id="@+id/linearID"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_16pxh"
-                    android:layout_marginStart="@dimen/_16pxh"
-                    android:layout_marginTop="@dimen/_18pxv"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
 
-                    <TextView
-                        android:id="@+id/txtApartado"
-                        style="@style/txtDMSansregular11"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_7pxv"
-                        android:layout_marginBottom="@dimen/_5pxv"
-                        android:layout_weight="0.38"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:singleLine="true"
-                        android:text="@string/msg_id_del_producto"
-                        android:textSize="12sp"
-                        tools:text="@string/msg_id_del_producto" />
-
-                    <TextView
-                        android:id="@+id/txtZipcode"
-                        style="@style/txtSolidRounded"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_66pxh"
-                        android:layout_weight="0.62"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:paddingStart="@dimen/_9pxh"
-                        android:paddingTop="@dimen/_7pxv"
-                        android:paddingBottom="@dimen/_6pxv"
-                        android:singleLine="true"
-                        android:text="@string/lbl_0239"
-                        android:textSize="12sp"
-                        tools:text="@string/lbl_0239" />
-                </LinearLayout>
                 <LinearLayout android:id="@+id/linearNombre"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_16pxh"
@@ -120,121 +81,37 @@
                     android:layout_width="match_parent"
                     android:orientation="horizontal" style="@style/groupStylecornerRadius">
 
-                    <TextView
-                        android:id="@+id/txtApartadoOne"
-                        style="@style/txtDMSansregular11"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8pxv"
-                        android:layout_marginBottom="@dimen/_4pxv"
-                        android:layout_weight="0.46"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:singleLine="true"
-                        android:text="@string/msg_nombre_del_prod"
-                        android:textSize="12sp"
-                        tools:text="@string/msg_nombre_del_prod" />
+                    <EditText
+                        android:id="@+id/plainTextName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="Name" />
 
-                    <TextView
-                        android:id="@+id/txtIngresa"
-                        style="@style/txtSolidRounded"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_35pxh"
-                        android:layout_weight="0.54"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:paddingStart="@dimen/_9pxh"
-                        android:paddingTop="@dimen/_8pxv"
-                        android:paddingBottom="@dimen/_5pxv"
-                        android:singleLine="true"
-                        android:text="@string/msg_ingresa_el_nomb"
-                        android:textSize="12sp"
-                        tools:text="@string/msg_ingresa_el_nomb" />
                 </LinearLayout>
-                <LinearLayout android:gravity="start"
+
+                <LinearLayout
                     android:id="@+id/linearStock"
+                    style="@style/groupStylecornerRadius"
+                    android:layout_width="331dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_23pxh"
                     android:layout_marginStart="@dimen/_23pxh"
                     android:layout_marginTop="@dimen/_15pxv"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/txtApartadoTwo"
-                        style="@style/txtDMSansregular11"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8pxv"
-                        android:layout_marginBottom="@dimen/_4pxv"
-                        android:layout_weight="0.48"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:singleLine="true"
-                        android:text="@string/msg_producto_en_sto"
-                        android:textSize="12sp"
-                        tools:text="@string/msg_producto_en_sto" />
-                    <LinearLayout android:id="@+id/linearIngresa"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_50pxh"
-                        android:layout_weight="0.52"
-                        android:layout_width="0dp"
-                        android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <EditText
+                        android:id="@+id/plainTextQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="Quantity" />
 
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/btnStock"
-                            style="@style/btnSolidRounded"
-                            android:layout_width="@dimen/_46pxh"
-                            android:layout_height="@dimen/_28pxv"
-                            android:ellipsize="end"
-                            android:gravity="center"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:paddingStart="@dimen/_9pxh"
-                            android:paddingTop="@dimen/_7pxv"
-                            android:paddingEnd="@dimen/_8pxh"
-                            android:paddingBottom="@dimen/_7pxv"
-                            android:singleLine="true"
-                            android:text="@string/lbl_stock"
-                            android:textAllCaps="false"
-                            android:textSize="12sp"
-                            tools:text="@string/lbl_stock" />
-
-                        <TextView
-                            android:id="@+id/txtDivisor"
-                            style="@style/txtDMSansbold10"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_4pxh"
-                            android:layout_marginTop="@dimen/_8pxv"
-                            android:layout_marginBottom="@dimen/_5pxv"
-                            android:layout_weight="0.05"
-                            android:ellipsize="end"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:singleLine="true"
-                            android:text="@string/lbl"
-                            android:textSize="12sp"
-                            tools:text="@string/lbl" />
-
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/btnTotal"
-                            style="@style/btnSolidRounded"
-                            android:layout_width="@dimen/_46pxh"
-                            android:layout_height="@dimen/_28pxv"
-                            android:layout_marginStart="@dimen/_3pxh"
-                            android:ellipsize="end"
-                            android:gravity="center"
-                            android:lineSpacingExtra="@dimen/_4pxh"
-                            android:paddingStart="@dimen/_9pxh"
-                            android:paddingTop="@dimen/_7pxv"
-                            android:paddingEnd="@dimen/_13pxh"
-                            android:paddingBottom="@dimen/_7pxv"
-                            android:singleLine="true"
-                            android:text="@string/lbl_total"
-                            android:textAllCaps="false"
-                            android:textSize="12sp"
-                            tools:text="@string/lbl_total" />
-                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearDescripcion"
                     android:layout_height="wrap_content"
@@ -245,39 +122,22 @@
                     android:layout_width="match_parent"
                     android:orientation="vertical" style="@style/groupStylecornerRadius">
 
-                    <TextView
-                        android:id="@+id/txtApartadoThree"
-                        style="@style/txtDMSansregular11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start"
-                        android:layout_marginStart="@dimen/_6pxh"
-                        android:layout_marginEnd="@dimen/_10pxh"
-                        android:ellipsize="end"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:singleLine="true"
-                        android:text="@string/lbl_descripci_n"
-                        android:textSize="12sp"
-                        tools:text="@string/lbl_descripci_n" />
-
-                    <TextView
-                        android:id="@+id/txtIngresaOne"
-                        style="@style/txtSolidRounded"
+                    <EditText
+                        android:id="@+id/plainTextDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_1pxv"
-                        android:ellipsize="end"
-                        android:gravity="start"
-                        android:lineSpacingExtra="@dimen/_4pxh"
-                        android:paddingStart="@dimen/_6pxh"
-                        android:paddingTop="@dimen/_12pxv"
-                        android:paddingBottom="@dimen/_30pxv"
-                        android:singleLine="true"
-                        android:text="@string/msg_ingresa_una_des"
-                        android:textSize="12sp"
-                        tools:text="@string/msg_ingresa_una_des" />
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="Description" />
                 </LinearLayout>
             </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonReturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add and Return" />
         </LinearLayout>
     </LinearLayout>
 </layout>

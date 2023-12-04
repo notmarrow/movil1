@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <data/>
     <LinearLayout android:gravity="center_horizontal"
         android:id="@+id/linearUpInfo"
@@ -166,73 +168,34 @@
                         android:layout_marginStart="@dimen/_60pxh"
                         android:layout_weight="0.53"
                         android:layout_width="0dp" android:orientation="horizontal">
-                        <TextView android:ellipsize="end"
+
+                        <TextView
                             android:id="@+id/txtContenidoOne"
+                            style="@style/txtDMSansbold16"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_1pxv"
                             android:layout_weight="0.25"
-                            android:layout_width="0dp"
+                            android:ellipsize="end"
                             android:lineSpacingExtra="@dimen/_5pxh"
                             android:singleLine="true"
                             android:text="@string/lbl_50"
-                            style="@style/txtDMSansbold16" tools:text="@string/lbl_50"/>
-                        <TextView android:ellipsize="end"
-                            android:id="@+id/txtTotal"
+                            tools:text="@string/lbl_50" />
+
+                        <Button
+                            android:id="@+id/buttonLess"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_1pxv"
-                            android:layout_weight="0.33"
-                            android:layout_width="0dp"
-                            android:lineSpacingExtra="@dimen/_5pxh"
-                            android:singleLine="true"
-                            android:text="@string/lbl_80"
-                            style="@style/txtDMSansbold16" tools:text="@string/lbl_80"/>
-                        <FrameLayout android:id="@+id/frameBotonMenos"
-                            android:layout_height="@dimen/_17pxv"
-                            android:layout_marginBottom="@dimen/_2pxv"
-                            android:layout_marginStart="@dimen/_14pxh"
-                            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_18pxh">
-                            <ImageView android:id="@+id/imageBotonPreg"
-                                android:layout_gravity="start"
-                                android:layout_height="@dimen/_17pxh"
-                                android:layout_width="@dimen/_18pxh"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/img_botonpreg"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_botonpreg"/>
-                            <ImageView android:id="@+id/imageMenos"
-                                android:layout_gravity="center"
-                                android:layout_height="@dimen/_8pxh"
-                                android:layout_marginBottom="@dimen/_4pxv"
-                                android:layout_marginEnd="@dimen/_4pxh"
-                                android:layout_marginStart="@dimen/_4pxh"
-                                android:layout_marginTop="@dimen/_5pxv"
-                                android:layout_width="@dimen/_10pxh"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/img_menos"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_menos"/>
-                        </FrameLayout>
-                        <FrameLayout android:id="@+id/frameBotonMas"
-                            android:layout_height="@dimen/_17pxv"
-                            android:layout_marginBottom="@dimen/_2pxv"
-                            android:layout_marginStart="@dimen/_6pxh"
-                            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_18pxh">
-                            <ImageView
-                                android:id="@+id/imageBotonPregOne"
-                                android:layout_gravity="start"
-                                android:layout_height="@dimen/_17pxh"
-                                android:layout_width="@dimen/_18pxh"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/img_botonpreg_light_green_900"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_botonpreg_light_green_900"/>
-                            <ImageView android:id="@+id/imagePlus"
-                                android:layout_gravity="center"
-                                android:layout_height="@dimen/_8pxh"
-                                android:layout_marginHorizontal="@dimen/_4pxh"
-                                android:layout_marginVertical="@dimen/_4pxv"
-                                android:layout_width="@dimen/_9pxh"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/img_plus"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_plus"/>
-                        </FrameLayout>
+                            android:layout_weight="0.6"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/buttonPlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:text="+" />
+
                     </LinearLayout>
                 </LinearLayout>
 
@@ -261,6 +224,12 @@
                     android:text="@string/msg_bebida_carbonat"
                     style="@style/txtDMSansbold14" tools:text="@string/msg_bebida_carbonat"/>
             </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return" />
         </LinearLayout>
     </LinearLayout>
 </layout>
